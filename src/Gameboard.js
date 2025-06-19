@@ -9,6 +9,9 @@ class Gameboard {
             this.grid.push(row);
         }
     }
+    receiveAttack(x, y) {
+        this.grid[x][y].isHit = true;
+    }
 }
 
 export default Gameboard
